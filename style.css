@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pexels-rfstudio-3819572.jpg);
+    background-repeat: no-repeat;
+    background-size: 30% 101vh;
+    /* background-position: top; */
+    background-color: #E3E3E3;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 3em;
+}
+
+.nav-elements {
+    display: flex;
+    align-items: center;
+    /* flex: 1; */
+}
+
+.line {
+    width: 24em;
+    height: 2px;
+    background-color: #000000;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: auto 3em;
+}
+
+.background {}
+
+/* Hero section  */
+.hero {
+    width: 70%;
+    height: 84vh;
+    padding: 0 3em;
+    position: absolute;
+    right: 0;
+}
+
+.hero-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title {
+    font-size: 9em;
+    /* flex: 1; */
+    line-height: 0.8;
+
+}
+
+.title-top {
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.title-bottom {
+    font-weight: 900;
+    padding-left: 1em;
+}
+
+.hero-content {
+    margin-right: 3em;
+}
+
+.hero-content-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-text {
+    align-self: flex-end;
+    font-size: 1.5em;
+    color: gray;
+    /* padding-bottom: 1em; */
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6em;
+    /* padding: 0 2em; */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.package-button {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+    padding: 1em 3em;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+/* Hero bottom section  */
+.hero-bottom {
+    display: flex;
+    /* border: 2px solid black; */
+    height: 57%;
+
+}
+
+.bottom-left {
+    /* border: 2px solid blueviolet; */
+    width: 40%;
+    padding: 2em;
+    line-height: 3em;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 230px;
+    background-color: black;
+    /* position: absolute;
+    left: 62px;
+    bottom: 40px; */
+}
+
+.service-item {
+    font-size: 1.6em;
+}
+
+.bottom-right {
+    /* border: 2px solid red; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-right {
+    /* border: 2px solid red; */
+
+}
+
+.bottom-right-content {
+    /* border: 2px solid blue; */
+
+}
+
+.dance-img-container {}
+
+.dance-img {
+    width: 100%;
+    height: 16em;
+    overflow: clip;
+
+}
+
+.quote-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.quote {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    font-weight: 600;
+}
+
+.bottom-right-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon {
+    height: 15em;
+    width: 6em;
+}
+
+/* .bottom-left>ul>li:nth-child(1):before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #333;
+    top: 21px;
+    left: -38px;
+} */
+
+.bottom-left>ul::before {
+    content: "";
+    height: 15rem;
+    width: 3px;
+    display: block;
+    background-color: gray;
+    position: absolute;
+    margin-left: r;
+    left: 62px;
+    top: 330px;
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    body {
+        background-image: none;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    nav {
+        margin: 1em 1em;
+    }
+
+    .logo img {
+        height: 2.2em;
+    }
+
+    .nav-elements {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .hero-top {
+        flex-direction: column;
+    }
+
+    .hero-content-top {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        margin-right: 0;
+    }
+
+    .hero-title {
+        font-size: 5em;
+    }
+
+    .hero-text {
+        align-self: flex-start;
+        font-size: 1.2em;
+        margin: 1em;
+    }
+
+    .hero-text>br {
+        display: none;
+    }
+
+    .icons {
+        display: none;
+        /* flex-direction: row; */
+    }
+
+    .package-button {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .hero-bottom {
+        flex-direction: column-reverse;
+        height: 134%;
+    }
+
+    .bottom-right {
+        width: 100%;
+    }
+
+    .bottom-right-arrow {
+        display: none;
+    }
+
+    .bottom-left {
+        width: 100%;
+        padding: 2em;
+        line-height: 3em;
+    }
+
+    .quote {
+        font-size: 1.3em;
+    }
+
+    .quote br {
+        display: none;
+    }
+
+    .dance-img {
+        height: auto;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+}
