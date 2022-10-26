@@ -8,7 +8,6 @@ body {
     background-image: url(./images/pexels-rfstudio-3819572.jpg);
     background-repeat: no-repeat;
     background-size: 30% 103vh;
-    /* background-position: top; */
     background-color: #E3E3E3;
     overflow: hidden;
 }
@@ -22,7 +21,6 @@ nav {
 .nav-elements {
     display: flex;
     align-items: center;
-    /* flex: 1; */
 }
 
 .line {
@@ -58,7 +56,6 @@ nav {
 
 .hero-title {
     font-size: 9em;
-    /* flex: 1; */
     line-height: 0.8;
 
 }
@@ -87,14 +84,12 @@ nav {
     align-self: flex-end;
     font-size: 1.5em;
     color: gray;
-    /* padding-bottom: 1em; */
 }
 
 .icons {
     display: flex;
     flex-direction: column;
     gap: 2.6em;
-    /* padding: 0 2em; */
 }
 
 .icon {
@@ -113,13 +108,11 @@ nav {
 /* Hero bottom section  */
 .hero-bottom {
     display: flex;
-    /* border: 2px solid black; */
     height: 57%;
 
 }
 
 .bottom-left {
-    /* border: 2px solid blueviolet; */
     width: 40%;
     padding: 2em;
     line-height: 3em;
@@ -129,9 +122,6 @@ nav {
     width: 2px;
     height: 230px;
     background-color: black;
-    /* position: absolute;
-    left: 62px;
-    bottom: 40px; */
 }
 
 .service-item {
@@ -139,23 +129,10 @@ nav {
 }
 
 .bottom-right {
-    /* border: 2px solid red; */
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
-
-.bottom-right {
-    /* border: 2px solid red; */
-
-}
-
-.bottom-right-content {
-    /* border: 2px solid blue; */
-
-}
-
-.dance-img-container {}
 
 .dance-img {
     width: 100%;
@@ -207,6 +184,7 @@ nav {
     color: #000;
 }
 
+/* Media queries */
 @media (min-width: 320px) and (max-width: 426px) {
     body {
         background-image: none;
@@ -259,7 +237,6 @@ nav {
 
     .icons {
         display: none;
-        /* flex-direction: row; */
     }
 
     .package-button {
@@ -307,5 +284,48 @@ nav {
         left: 24px;
         height: 9em;
         z-index: -1;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+    body {
+        background-size: 34% 120vh;
+        width: 120%;
+    }
+
+    nav {
+        margin: 1em;
+    }
+
+    .line {
+        width: 10em;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        height: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    .hero-title {
+        font-size: 7em;
+    }
+
+    .arrow-icon {
+        height: 14em;
+        width: 3em;
+    }
+
+    .bottom-left {
+        padding: 0;
+    }
+
+    .bottom-left>ul>li::before {
+        top: 305px;
+        left: 11.9em;
     }
 }
